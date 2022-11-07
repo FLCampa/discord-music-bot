@@ -11,8 +11,8 @@ const TOKEN = process.env.TOKEN
 
 const LOAD_SLASH = process.argv[2] == 'load'
 
-const CLIENT_ID = '1038506984091164773'
-const GUILD_ID = '947884151195967538'
+const CLIENT_ID = process.env.CLIENT_ID
+const GUILD_ID = process.env.GUILD_ID
 
 const client = new Client({
   intents: [
